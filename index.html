@@ -1,2 +1,278 @@
-<p>yeison garcia</p>
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenAI y el Problema del Milenio</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #0f172a, #1e3a8a);
+            color: white;
+            line-height: 1.6;
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 20px;
+            background: rgba(0, 0, 0, 0.3);
+        }
+
+        header h1 {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        header p {
+            font-size: 20px;
+            color: #dbeafe;
+        }
+
+        .contenedor {
+            width: 90%;
+            max-width: 1100px;
+            margin: 40px auto;
+        }
+
+        .tarjeta {
+            background: white;
+            color: #1e293b;
+            padding: 30px;
+            margin-bottom: 25px;
+            border-radius: 18px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+        }
+
+        .tarjeta h2 {
+            color: #1d4ed8;
+            margin-bottom: 15px;
+        }
+
+        .tarjeta p {
+            margin-bottom: 15px;
+        }
+
+        .datos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .dato {
+            background: #eff6ff;
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .dato h3 {
+            color: #1d4ed8;
+            font-size: 28px;
+        }
+
+        .destacado {
+            background: linear-gradient(135deg, #2563eb, #7c3aed);
+            color: white;
+        }
+
+        .destacado h2 {
+            color: white;
+        }
+
+        .ecuacion {
+            background: #0f172a;
+            color: #7dd3fc;
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+            font-size: 24px;
+            margin-top: 20px;
+            overflow-x: auto;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: rgba(0,0,0,0.4);
+            margin-top: 40px;
+        }
+
+        .boton {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 12px 25px;
+            background: white;
+            color: #1d4ed8;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+        }
+
+        .boton:hover {
+            background: #dbeafe;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>🤖 OpenAI y el Problema del Milenio</h1>
+        <p>La inteligencia artificial frente a las matemáticas más difíciles</p>
+    </header>
+
+    <main class="contenedor">
+
+        <section class="tarjeta destacado">
+            <h2>🌊 ¿Qué ocurrió?</h2>
+
+            <p>
+                OpenAI anunció que un sistema de inteligencia artificial
+                había encontrado una posible solución al problema de
+                existencia y suavidad de Navier–Stokes, uno de los famosos
+                Problemas del Milenio.
+            </p>
+
+            <p>
+                Este problema busca determinar si las ecuaciones que
+                describen el movimiento de fluidos, como el agua y el aire,
+                siempre tienen soluciones suaves o si pueden aparecer
+                singularidades.
+            </p>
+        </section>
+
+        <section class="tarjeta">
+
+            <h2>🧠 ¿Qué son los Problemas del Milenio?</h2>
+
+            <p>
+                Los Problemas del Milenio son siete problemas matemáticos
+                extremadamente difíciles seleccionados por el Clay
+                Mathematics Institute.
+            </p>
+
+            <p>
+                Cada problema tiene asociado un premio de un millón de
+                dólares para una solución que cumpla los requisitos
+                establecidos.
+            </p>
+
+            <div class="datos">
+
+                <div class="dato">
+                    <h3>7</h3>
+                    <p>Problemas del Milenio</p>
+                </div>
+
+                <div class="dato">
+                    <h3>$1M</h3>
+                    <p>Premio por problema</p>
+                </div>
+
+                <div class="dato">
+                    <h3>2000</h3>
+                    <p>Año en que fueron anunciados</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="tarjeta">
+
+            <h2>🌊 ¿Qué es Navier–Stokes?</h2>
+
+            <p>
+                Las ecuaciones de Navier–Stokes son utilizadas para
+                describir el comportamiento de los fluidos.
+            </p>
+
+            <p>
+                Se pueden utilizar para estudiar fenómenos como el
+                movimiento del agua, el aire, la turbulencia y otros
+                fenómenos relacionados con los fluidos.
+            </p>
+
+            <div class="ecuacion">
+                ρ(∂u/∂t + u · ∇u) = −∇p + μ∇²u + f
+            </div>
+
+        </section>
+
+        <section class="tarjeta">
+
+            <h2>🤖 ¿Qué hizo la inteligencia artificial?</h2>
+
+            <p>
+                Según el anuncio de OpenAI, agentes de inteligencia
+                artificial trabajaron sobre el problema y encontraron
+                una demostración matemática que posteriormente fue
+                formalizada y verificada utilizando Lean.
+            </p>
+
+            <p>
+                La formalización en un asistente de pruebas como Lean
+                permite comprobar de manera mecánica muchos de los pasos
+                de una demostración.
+            </p>
+
+        </section>
+
+        <section class="tarjeta">
+
+            <h2>⚠️ ¿Significa que el problema ya está oficialmente resuelto?</h2>
+
+            <p>
+                No necesariamente. Una afirmación de este tipo necesita
+                pasar por una revisión matemática independiente y cumplir
+                los criterios establecidos para considerar oficialmente
+                resuelto uno de los Problemas del Milenio.
+            </p>
+
+            <p>
+                Por eso es importante diferenciar entre
+                <strong>"OpenAI afirma haber encontrado una solución"</strong>
+                y que la comunidad matemática haya aceptado oficialmente
+                la demostración.
+            </p>
+
+        </section>
+
+        <section class="tarjeta">
+
+            <h2>🚀 ¿Por qué es importante?</h2>
+
+            <p>
+                Si una demostración de este nivel fuera validada por la
+                comunidad matemática, sería un acontecimiento histórico
+                tanto para las matemáticas como para la inteligencia
+                artificial.
+            </p>
+
+            <p>
+                También demostraría que los sistemas de IA pueden ayudar
+                a los investigadores con problemas matemáticos que durante
+                décadas han resistido los esfuerzos humanos.
+            </p>
+
+        </section>
+
+        <section class="tarjeta">
+
+            <h2>📚 Los siete Problemas del Milenio</h2>
+
+            <ul>
+                <li>Problema de Navier–Stokes</li>
+                <li>Hipótesis de Riemann</li>
+                <li>P versus NP</li>
+```
+
 
